@@ -3,7 +3,6 @@
 ---@field public hover? LspsagaConfig.Hover Hover documentation
 ---@field public diagnostic? LspsagaConfig.Diagnostic LSP Diagnostic popup
 ---@field public code_action? LspsagaConfig.CodeAction LSP Code Action popup
----@field public lightbulb? LspsagaConfig.Lightbulb LSP Lightbulb indicator
 ---@field public scroll_preview? LspsagaConfig.Scroll.Keys Keys to scroll
 ---@field public request_timeout? integer LSP request timeout
 ---@field public finder? LspsagaConfig.Finder Token/reference finder
@@ -69,7 +68,6 @@
 ---@field title? boolean Show title in some float window
 ---@field expand? string Expand (drop down) icon
 ---@field collapse? string Collapse (drop down) icon
----@field code_action? string Code Action (lightbulb) icon
 ---@field lines? string[] Symbols used in virtual text connect
 ---@field kind? table LSP kind custom table
 ---@field button? [string, string] Button icon { '', '' }
@@ -103,14 +101,6 @@
 ---@field max_height? number code action window max height
 ---@field cursorline? boolean code action window highlight cursor line
 ---@field keys? LspsagaConfig.CodeAction.Keys
-
----@class LspsagaConfig.Lightbulb
----@field enable? boolean enable lightbulb
----@field sign? boolean show sign in status column
----@field debounce? integer timer debounce
----@field sign_priority? integer sign priority
----@field virtual_text? boolean show virtual text at the end of line
----@field enable_in_insert? boolean enable virtual text in insert mode
 
 ---@class LspsagaConfig.Finder
 ---@field max_height? number max_height of the finder window (float layout)

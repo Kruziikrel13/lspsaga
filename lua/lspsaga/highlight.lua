@@ -41,8 +41,6 @@ local function hi_define()
     DiagnosticText = {},
     DiagnosticShowNormal = { link = 'SagaNormal' },
     DiagnosticShowBorder = { link = '@property' },
-    -- lightbulb
-    SagaLightBulb = { link = 'DiagnosticSignHint' },
     -- Implement
     SagaImpIcon = { link = 'PreProc' },
 

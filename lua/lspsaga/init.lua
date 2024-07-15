@@ -53,14 +53,6 @@ local default_config = {
       exec = '<CR>',
     },
   },
-  lightbulb = {
-    enable = true,
-    sign = true,
-    debounce = 10,
-    sign_priority = 40,
-    virtual_text = true,
-    enable_in_insert = true,
-  },
   scroll_preview = {
     scroll_down = '<C-f>',
     scroll_up = '<C-b>',
@@ -176,9 +168,6 @@ function saga.setup(opts)
   saga.config = vim.tbl_deep_extend('force', default_config, opts)
 
   require('lspsaga.highlight'):init_highlight()
-  if saga.config.lightbulb.enable then
-    require('lspsaga.codeaction.lightbulb').lb_autocmd()
-  end
 
   if vim.version().minor >= 10 and vim.fn.exists('##LspNotify') ~= 0 then
     require('lspsaga.symbol.head'):register_module()
