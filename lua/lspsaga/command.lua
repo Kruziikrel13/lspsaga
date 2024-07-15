@@ -61,9 +61,6 @@ local subcommands = {
   subtypes = function(args)
     require('lspsaga.typehierarchy'):send_method(3, args)
   end,
-  term_toggle = function(args)
-    require('lspsaga.floaterm'):open_float_terminal(args)
-  end,
   open_log = function()
     require('lspsaga.logger'):open()
   end

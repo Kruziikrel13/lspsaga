@@ -14,7 +14,6 @@
 ---@field public typehierarchy? LspsagaConfig.Hierarchy Type hierarchy
 ---@field public implement? LspsagaConfig.Implement Implementation
 ---@field public beacon? LspsagaConfig.Beacon Beacon
----@field public floaterm? LspsagaConfig.Term Floating terminal
 
 ---@class LspsagaConfig.Definition
 ---@field width? number defines float window width
@@ -62,10 +61,6 @@
 ---@field lang? string[] Additional languages that support implementing interfaces
 ---@field virtual_text? boolean show virtual text at the end of line
 ---@field priority? integer sign priority
-
----@class LspsagaConfig.Term
----@field height? number Floating terminal height
----@field width? number Floating terminal width
 
 ---@class LspsagaConfig.Ui
 ---@field border? BorderType Border type, see `:help nvim_open_win`

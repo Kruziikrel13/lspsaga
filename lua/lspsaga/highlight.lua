@@ -43,9 +43,6 @@ local function hi_define()
     DiagnosticShowBorder = { link = '@property' },
     -- lightbulb
     SagaLightBulb = { link = 'DiagnosticSignHint' },
-    -- Float term
-    TerminalBorder = { link = 'SagaBorder' },
-    TerminalNormal = { link = 'SagaNormal' },
     -- Implement
     SagaImpIcon = { link = 'PreProc' },
 
