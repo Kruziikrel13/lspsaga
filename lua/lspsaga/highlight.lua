@@ -21,13 +21,6 @@ local function hi_define()
     SagaCount = { bg = 'gray', fg = 'white', bold = true },
     SagaSep = { link = 'Comment' },
 
-    -- code action
-    ActionPreviewNormal = { link = 'SagaNormal' },
-    ActionPreviewBorder = { link = 'SagaBorder' },
-    ActionPreviewTitle = { link = 'Title' },
-    CodeActionText = { link = '@variable' },
-    CodeActionNumber = { link = 'DiffAdd' },
-    CodeActionCursorLine = { link = 'CursorLine' },
     -- hover
     HoverNormal = { link = 'SagaNormal' },
     HoverBorder = { link = 'SagaBorder' },
@@ -35,12 +28,7 @@ local function hi_define()
     RenameBorder = { link = 'SagaBorder' },
     RenameNormal = { link = 'Statement' },
     RenameMatch = { link = 'Search' },
-    -- diagnostic
-    DiagnosticBorder = { link = 'SagaBorder' },
-    DiagnosticNormal = { link = 'SagaNormal' },
-    DiagnosticText = {},
-    DiagnosticShowNormal = { link = 'SagaNormal' },
-    DiagnosticShowBorder = { link = '@property' },
+
     -- Implement
     SagaImpIcon = { link = 'PreProc' },
 

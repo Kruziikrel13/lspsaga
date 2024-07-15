@@ -10,7 +10,6 @@ local default_config = {
     title = true,
     expand = '⊞',
     collapse = '⊟',
-    code_action = '💡',
     lines = { '┗', '┣', '┃', '━', '┏' },
     kind = nil,
     button = { '', '' },
@@ -20,38 +19,7 @@ local default_config = {
     max_width = 0.9,
     max_height = 0.8,
     open_link = 'gx',
-    open_cmd = '!chrome',
-  },
-  diagnostic = {
-    show_layout = 'float',
-    show_normal_height = 10,
-    jump_num_shortcut = true,
-    auto_preview = false,
-    max_width = 0.8,
-    max_height = 0.6,
-    max_show_width = 0.9,
-    max_show_height = 0.6,
-    wrap_long_lines = true,
-    extend_relatedInformation = false,
-    diagnostic_only_current = false,
-    keys = {
-      exec_action = 'o',
-      quit = 'q',
-      toggle_or_jump = '<CR>',
-      quit_in_show = { 'q', '<ESC>' },
-    },
-  },
-  code_action = {
-    num_shortcut = true,
-    show_server_name = false,
-    extend_gitsigns = false,
-    only_in_cursor = true,
-    max_height = 0.3,
-    cursorline = true,
-    keys = {
-      quit = 'q',
-      exec = '<CR>',
-    },
+    open_cmd = '!firefox',
   },
   scroll_preview = {
     scroll_down = '<C-f>',
@@ -178,10 +146,6 @@ function saga.setup(opts)
       )
     end
     require('lspsaga.symbol'):register_module()
-  end
-
-  if saga.config.diagnostic.diagnostic_only_current then
-    require('lspsaga.diagnostic.virt').diag_on_current()
   end
 end
 

@@ -37,15 +37,6 @@ local subcommands = {
   show_cursor_diagnostics = function(args)
     require('lspsaga.diagnostic.show'):show_diagnostics({ cursor = true, args = args })
   end,
-  diagnostic_jump_next = function()
-    require('lspsaga.diagnostic'):goto_next()
-  end,
-  diagnostic_jump_prev = function()
-    require('lspsaga.diagnostic'):goto_prev()
-  end,
-  code_action = function()
-    require('lspsaga.codeaction'):code_action()
-  end,
   outline = function()
     require('lspsaga.symbol'):outline()
   end,
