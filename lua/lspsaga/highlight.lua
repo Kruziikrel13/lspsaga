@@ -48,11 +48,6 @@ local function hi_define()
     TerminalNormal = { link = 'SagaNormal' },
     -- Implement
     SagaImpIcon = { link = 'PreProc' },
-    --Winbar
-    SagaWinbarSep = { link = 'Operator' },
-    SagaWinbarFileName = { link = 'SagaFileName' },
-    SagaWinbarFolderName = { link = 'SagaFolderName' },
-    SagaWinbarFolder = { link = 'SagaFolder' },
 
     -- deprecated
     SagaFileName = { link = 'Comment' },

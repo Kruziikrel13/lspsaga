@@ -66,10 +66,7 @@ local subcommands = {
   end,
   open_log = function()
     require('lspsaga.logger'):open()
-  end,
-  winbar_toggle = function()
-    require('lspsaga.symbol.winbar').toggle()
-  end,
+  end
 }
 
 function command.command_list()

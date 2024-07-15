@@ -9,7 +9,6 @@
 ---@field public finder? LspsagaConfig.Finder Token/reference finder
 ---@field public definition? LspsagaConfig.Definition Definition
 ---@field public rename? LspsagaConfig.Rename Rename
----@field public symbol_in_winbar? LspsagaConfig.Crumbs Breadcrumbs
 ---@field public outline? LspsagaConfig.Outline Outline
 ---@field public callhierarchy? LspsagaConfig.Hierarchy Call hierarchy
 ---@field public typehierarchy? LspsagaConfig.Hierarchy Type hierarchy

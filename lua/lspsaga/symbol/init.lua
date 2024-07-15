@@ -195,10 +195,6 @@ function symbol:register_module()
       end
       self:do_request(args.buf, args.data.client_id)
 
-      if config.symbol_in_winbar.enable then
-        require('lspsaga.symbol.winbar').init_winbar(args.buf)
-      end
-
       if config.implement.enable and client.supports_method('textDocument/implementation') then
         require('lspsaga.implement').start()
       end
@@ -210,9 +206,6 @@ function symbol:register_module()
     callback = function(args)
       if self[args.buf] then
         self[args.buf] = nil
-        if config.symbol_in_winbar.enable then
-          pcall(api.nvim_del_augroup_by_name, 'SagaWinbar' .. args.buf)
-        end
       end
     end,
   })
