@@ -6,7 +6,6 @@
 ---@field public finder? LspsagaConfig.Finder Token/reference finder
 ---@field public definition? LspsagaConfig.Definition Definition
 ---@field public rename? LspsagaConfig.Rename Rename
----@field public outline? LspsagaConfig.Outline Outline
 ---@field public callhierarchy? LspsagaConfig.Hierarchy Call hierarchy
 ---@field public typehierarchy? LspsagaConfig.Hierarchy Type hierarchy
 ---@field public implement? LspsagaConfig.Implement Implementation
@@ -24,28 +23,6 @@
 ---@field project_max_width? number
 ---@field project_max_height? number
 ---@field keys? LspsagaConfig.Rename.Keys
-
----@class LspsagaConfig.Crumbs
----@field enable? boolean Enable breadcrumbs
----@field separator? string Separator symbol
----@field hide_keyword? boolean when true some symbols like if and for; ignored if treesitter is not installed
----@field ignore_patterns? string[] Filename patterns to ignore
----@field show_file? boolean Show file name before symbols
----@field folder_level? integer Show how many folder layers before the file name
----@field color_mode? boolean mean the symbol name and icon have same color. Otherwise, symbol name is light-white
----@field delay? integer Dynamic render delay
-
----@class LspsagaConfig.Outline
----@field win_position? "left" | "right" window position
----@field win_width? integer window width
----@field auto_preview? boolean auto preview when cursor moved in outline window
----@field detail? boolean show detail
----@field auto_close? boolean auto close itself when outline window is last window
----@field close_after_jump? boolean close after jump
----@field layout? LayoutOption when is float above options will ignored
----@field max_height? number Max height of outline window
----@field left_width? number Width of left panel
----@field keys? LspsagaConfig.Outline.Keys
 
 ---@class LspsagaConfig.Hierarchy
 ---@field layout? LayoutOption
@@ -118,11 +95,6 @@
 ---@field shuttle? SagaKeys shuttle between the hierarchy
 ---@field close? SagaKeys close the hierarchy
 ---@field toggle_or_req? SagaKeys toggle or do request
-
----@class LspsagaConfig.Outline.Keys
----@field toggle_or_jump? SagaKeys toggle or jump
----@field quit? SagaKeys quit
----@field jump? SagaKeys jump to pos even on expand/collapse node
 
 ---@class LspsagaConfig.Definition.Keys
 ---@field edit? SagaKeys

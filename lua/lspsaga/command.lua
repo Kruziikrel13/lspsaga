@@ -37,9 +37,6 @@ local subcommands = {
   show_cursor_diagnostics = function(args)
     require('lspsaga.diagnostic.show'):show_diagnostics({ cursor = true, args = args })
   end,
-  outline = function()
-    require('lspsaga.symbol'):outline()
-  end,
   incoming_calls = function(args)
     require('lspsaga.callhierarchy'):send_method(2, args)
   end,

@@ -74,22 +74,6 @@ local default_config = {
       select = 'x',
     },
   },
-  outline = {
-    win_position = 'right',
-    win_width = 30,
-    auto_preview = true,
-    detail = true,
-    auto_close = true,
-    close_after_jump = false,
-    layout = 'normal',
-    max_height = 0.5,
-    left_width = 0.3,
-    keys = {
-      toggle_or_jump = 'o',
-      quit = 'q',
-      jump = 'e',
-    },
-  },
   callhierarchy = {
     layout = 'float',
     left_width = 0.2,
@@ -138,14 +122,12 @@ function saga.setup(opts)
   require('lspsaga.highlight'):init_highlight()
 
   if vim.version().minor >= 10 and vim.fn.exists('##LspNotify') ~= 0 then
-    require('lspsaga.symbol.head'):register_module()
   else
     if vim.version().minor >= 10 then
       print(
         "[lspsaga.nvim] you're running outdated nightly version, you'll need LspNotify autocmd event to enable improved symbol"
       )
     end
-    require('lspsaga.symbol'):register_module()
   end
 end
 
