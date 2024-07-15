@@ -1,8 +1,5 @@
-<div align="center">
-<img src="https://github.com/nvimdev/lspsaga.nvim/assets/41671631/682a189e-6571-48f8-af1c-1e52142c7071" width="20%" height="20%"/>
-</div>
-
-improve lsp experences in neovim
+## Lspsaga Stripped
+Lspsaga, but stripped of the stuff I don't personally need
 
 [![](https://img.shields.io/badge/Element-0DBD8B?style=for-the-badge&logo=element&logoColor=white)](https://matrix.to/#/#lspsaga-nvim:matrix.org)
 
