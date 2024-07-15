@@ -25,18 +25,6 @@ local subcommands = {
   hover_doc = function(args)
     require('lspsaga.hover'):render_hover_doc(args)
   end,
-  show_workspace_diagnostics = function(args)
-    require('lspsaga.diagnostic.show'):show_diagnostics({ workspace = true, args = args })
-  end,
-  show_line_diagnostics = function(args)
-    require('lspsaga.diagnostic.show'):show_diagnostics({ line = true, args = args })
-  end,
-  show_buf_diagnostics = function(args)
-    require('lspsaga.diagnostic.show'):show_diagnostics({ buffer = true, args = args })
-  end,
-  show_cursor_diagnostics = function(args)
-    require('lspsaga.diagnostic.show'):show_diagnostics({ cursor = true, args = args })
-  end,
   incoming_calls = function(args)
     require('lspsaga.callhierarchy'):send_method(2, args)
   end,
